@@ -6,8 +6,8 @@ php:
 
 script:
   - phpunit tests  # Aquí se especifica el directorio de pruebas
-
-  deploy:
+#cambios hechos
+deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN  # Configurado en Travis CI quedo listoo
