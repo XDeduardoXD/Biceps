@@ -10,7 +10,7 @@ script:
   deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN  # Configurado en Travis CI
+  github_token: $GITHUB_TOKEN  # Configurado en Travis CI quedo listoo
   local_dir: build
   on:
     branch: main
