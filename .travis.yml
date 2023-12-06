@@ -3,14 +3,17 @@ language: php
 php:
   - 7.4
   - 8.0
+  
+os: linux
+dist: xenial
 
 script:
   - phpunit tests  # Aquí se especifica el directorio de pruebas
 #cambios hechos
 deploy:
   provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN  # Configurado en Travis CI quedo listoo
+  cleanup: false
+  token: $GITHUB_TOKEN  # Configurado en Travis CI quedo listoo
   local_dir: build
   on:
     branch: main
